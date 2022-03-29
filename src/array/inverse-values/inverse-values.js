@@ -16,4 +16,19 @@ Don't mutate the parameter.
 
 // TODO add your code here
 
-module.exports = inverse;
+
+/* const Array = [1, -2, 3, -4, -5] */
+
+function inverse(Array) {
+
+    if (Array === null || Array === []) {
+        return [];
+    } else {
+        for (i = 0; i < Array.length; i++) {
+            Array[i] = -Array[i];
+        }
+        return Array;
+    }
+}
+
+module.exports = inverse
